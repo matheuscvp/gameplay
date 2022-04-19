@@ -7,7 +7,6 @@ import { Background } from './../../components/Background/index';
 import { useNavigation } from "@react-navigation/native";
 
 export function SignIn() {
-    const [text, setText] = useState('');
     const navigation = useNavigation();
     
     function handleSignIn() {
@@ -33,7 +32,7 @@ export function SignIn() {
 
                     <ButtonIcon 
                         title={'Entrar com Discord'}
-                        onPress={handleSignIn} 
+                        onPress={handleSignIn}
                     />
                 </View>
             </View>

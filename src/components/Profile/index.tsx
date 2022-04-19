@@ -19,11 +19,13 @@ export function Profile() {
                         Rodrigo
                     </Text>
                 </View>
+                
+                <View>
+                    <Text style={styles.message}>
+                        Hoje é dia de Vitória
+                    </Text>
+                </View>
             </View>
-
-            <Text style={styles.message}>
-                Hoje é dia de Vitória
-            </Text>
         </View>
     )
 }
