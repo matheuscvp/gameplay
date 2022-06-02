@@ -56,6 +56,10 @@ export function Home() {
     function handleCategorySelect(categoryId: string) {
         categoryId === category ? setCategory('') : setCategory(categoryId);
     }
+    
+    function handleAppointmentDetails() {
+        navigation.navigate('AppointmentDetails');
+    }
 
     return (
         <View>
@@ -80,7 +84,7 @@ export function Home() {
                         data={appointments}
                         keyExtractor={item => item.id}
                         renderItem={({ item }) => (
-                            <Appointment data={item} />
+                            <Appointment data={item} onPress={handleAppointmentDetails}/>
                         )}
                         ItemSeparatorComponent={() => <ListDivider />}
                         style={styles.matches}
